@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0b090e;
+    color: #f4ebd9;
+    font-family: 'VT323', monospace;
+    user-select: none;
+    image-rendering: pixelated;
+  }
+}
+
+.font-pixel-title {
+  font-family: 'Press Start 2P', monospace;
+  letter-spacing: 0.04em;
+}
+
+.font-pixel-body {
+  font-family: 'VT323', monospace;
+  letter-spacing: 0.02em;
+}
+
+/* Minecraft Dungeons & Terraria inspired stone & bronze pixel UI */
+.pixel-panel {
+  background-color: #18141e;
+  border: 4px solid #4a3f55;
+  box-shadow:
+    inset 0 0 0 2px #0f0c14,
+    0 8px 0 0 #09070c;
+}
+
+.pixel-panel-gold {
+  background-color: #1e1815;
+  border: 4px solid #c99738;
+  box-shadow:
+    inset 0 0 0 2px #3b2a14,
+    0 8px 0 0 #0a0807;
+}
+
+.pixel-btn {
+  font-family: 'Press Start 2P', monospace;
+  background-color: #2c2436;
+  border: 3px solid #6b5b7b;
+  box-shadow:
+    inset 0 -4px 0 0 #18131f,
+    0 4px 0 0 #09070c;
+  transition: transform 120ms cubic-bezier(0.16, 1, 0.3, 1), background-color 120ms ease;
+}
+
+.pixel-btn:hover:not(:disabled) {
+  background-color: #3d324b;
+  border-color: #e6b34b;
+  transform: translateY(-2px);
+}
+
+.pixel-btn:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow:
+    inset 0 -2px 0 0 #18131f,
+    0 1px 0 0 #09070c;
+}
+
+.pixel-btn-primary {
+  font-family: 'Press Start 2P', monospace;
+  background-color: #8f3224;
+  border: 3px solid #e89d3c;
+  color: #fff6e5;
+  box-shadow:
+    inset 0 -4px 0 0 #591b12,
+    0 4px 0 0 #09070c;
+  transition: transform 120ms cubic-bezier(0.16, 1, 0.3, 1), background-color 120ms ease;
+}
+
+.pixel-btn-primary:hover:not(:disabled) {
+  background-color: #ad3d2c;
+  border-color: #ffd166;
+  transform: translateY(-2px);
+}
+
+.pixel-btn-primary:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow:
+    inset 0 -2px 0 0 #591b12,
+    0 1px 0 0 #09070c;
+}
+
+/* Custom Pixel Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #120f17;
+  border-left: 2px solid #2d2538;
+}
+::-webkit-scrollbar-thumb {
+  background: #5b4c6e;
+  border: 2px solid #120f17;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c99738;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Dungeons & Diameters",
+  "description": "Game RPG 3D Gladiator interaktif materi Lingkaran Matematika Kelas XI SMA bergaya blocky dungeon.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
